@@ -1,0 +1,54 @@
+.about-home {
+    padding: 50px 0;
+}
+.about-home__wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.about-home__intro {
+    h2 {
+        background-image: url(../../img/icons/ico-gioithieu.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        font-size: 36px;
+        color: #353535;
+        font-family: robotob;
+        padding-left: 60px;
+        margin-bottom: 15px;
+    }
+}
+.about-home__item {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+      padding-left: 0px;
+    color: #747474;
+    font-size: 14px;
+    line-height: 1.5em;
+    position: relative;
+    background-image: url(../../img/icons/ico-check-about.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    padding-left: 57px;
+  
+}
+.about-home__video a {
+    position: relative;
+}
+.about-home__video a::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: calc(50% - 33px);
+    left: calc(50% - 33px);
+    background-image: url(../../img/icons/ico-play.png);
+    background-repeat: no-repeat;
+    background-position: 0 -66px;
+}
+.about-home__video a:hover::before {
+    background-position: 0 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}

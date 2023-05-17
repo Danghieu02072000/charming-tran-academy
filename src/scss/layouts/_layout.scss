@@ -60,6 +60,18 @@ h6 {
   margin: 0;
   padding: 0;
 }
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  color: #747474;
+}
 
 /*Scroll Top*/
 #scrollTop {
@@ -87,4 +99,23 @@ h6 {
   &:hover {
     opacity: 1;
   }
+}
+.bt-primary {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 44px;
+  font-family: robotob;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+  border: 1px solid #b85d9a;
+  background-color: #b85d9a;
+  padding: 0 25px;
+  color: #fff !important;
+  font-weight: bold;
+}
+.about-home__menu {
+  margin: 15px 0;
 }
