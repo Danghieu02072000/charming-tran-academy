@@ -6,6 +6,7 @@ body {
   font-size: $font-size-primary;
   color: $text-color-primary;
   background-color: $background-primary;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -118,4 +119,7 @@ p {
 }
 .about-home__menu {
   margin: 15px 0;
+}
+.img_reponsive {
+  width: 100%;
 }

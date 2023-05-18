@@ -1,0 +1,27 @@
+.bg_home {
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    min-height: 260px;
+}
+.bg {
+    background-image: url("../../img/banner/banner-ruler2.png");
+    transform: translate(0%, 8.66935%) translate3d(0px, 0px, 0px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 160%;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+.bg_content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+}

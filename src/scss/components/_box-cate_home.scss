@@ -1,0 +1,106 @@
+.box-cate-home {
+    padding-top: 50px;
+    float: left;
+    width: 100%;
+}
+.box-cate__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+.box-cate__item {
+    width: 31%;
+}
+
+.box-cate__item:first-child {
+    .box-cate__link {
+        float: left;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px 0;
+        min-height: 173px;
+
+        span {
+            font-size: 20px;
+            color: #FFF;
+            font-weight: li;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.5em;
+        }
+    }
+    .box-cate__link:first-child {
+        background-image: url(../../img/banner/bg-cate-1.png);
+    }
+    .box-cate__link:nth-child(2) {
+        background-image: url(../../img/banner/bg-cate-2.png);
+    }
+    .box-cate__link:nth-child(3) {
+        background-image: url(../../img/banner/bg-cate-3.png);
+        margin-bottom: 0;
+    }
+}
+.box-cate__item:nth-child(3) {
+    .box-cate__link {
+        float: left;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px 0;
+        min-height: 173px;
+
+        span {
+            font-size: 20px;
+            color: #FFF;
+            font-weight: li;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.5em;
+        }
+    }
+    .box-cate__link:first-child {
+        background-image: url(../../img/banner/bg-cate-4.png);
+    }
+    .box-cate__link:nth-child(2) {
+        background-image: url(../../img/banner/bg-cate-5.png);
+    }
+    .box-cate__link:nth-child(3) {
+        background-image: url(../../img/banner/bg-cate-6.png);
+        margin-bottom: 0;
+    }
+}
+.box-cate__detal {
+    padding: 30px;
+    text-align: center;
+    background-color: #ebebeb;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
