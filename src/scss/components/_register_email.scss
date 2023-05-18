@@ -1,0 +1,61 @@
+.register-email {
+    background-color: #e7ebf0;
+    padding: 13px 0;
+}
+.register_email__wapper {
+    display: flex;
+    gap: 10px;
+}
+.register-email__text {
+    background-image: url(../../img/icons/ico-newsletter.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    width: 49%;
+
+    h3 {
+        font-size: 18px;
+        color: #353535;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #747474;
+        font-size: 14px;
+        line-height: 1.4em;
+        font-style: italic;
+    }
+}
+.register-email__form {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 100%;
+    }
+}
+.register-email__input {
+    width: calc(100% - 105px);
+    float: left;
+    height: 44px;
+    border: 1px solid #fff;
+    text-indent: 10px;
+    font-size: 13px;
+    font-style: italic;
+}
+.register-email__btn {
+    width: 105px;
+    height: 44px;
+    background-color: #b85d9a;
+    color: #fff;
+    border: 1px solid #b85d9a;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: robotob;
+    transition: .3s ease-in-out;
+}

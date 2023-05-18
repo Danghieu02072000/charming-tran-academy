@@ -1,12 +1,8 @@
 extends ../_layouts/_layouts
 include ../_mixins/_image
 
-block variables
-  - var title='Home'
-
 block content
   .main-pageHome
-    include  ./_home/_carousel-banner
     include ../_components/_link-cate_pageHome
     include ../_components/_about_home
     include ../_components/_bg_home
@@ -15,4 +11,3 @@ block content
     include ../_components/_register
     include ../_components/_list_comment
     include ../_components/_register_email
-

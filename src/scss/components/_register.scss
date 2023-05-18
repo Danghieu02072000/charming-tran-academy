@@ -1,0 +1,56 @@
+.register {
+    padding: 30px;
+}
+.register__wrap {
+    padding: 30px 30px 20px 30px;
+    background-image: url(../../img/banner/bg-register.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin: 20px 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.register-text {
+    width: 42%;
+}
+.register-text__title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.register-text__desc {
+    color: #fff;
+    line-height: 1.4;
+}
+.register__input {
+    width: calc(33.333% - 10px);
+    margin-left: 10px;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    float: left;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #747474;
+    outline-color: blue;
+}
+.input-double {
+    width: calc(66.666% - 10px);
+}
+.register__btn {
+    width: calc(33.333% - 10px);
+    margin-left: 10px;
+    height: 44px;
+    background-color: #a73280;
+    border: 2px solid #a73280;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+.register__btn:hover {
+    border-color: #fff;
+}
