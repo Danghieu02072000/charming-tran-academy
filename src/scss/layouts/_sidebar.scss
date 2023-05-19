@@ -1,48 +1,181 @@
 ﻿@import "../helpers/_variables.scss";
 @import "../helpers/_mixins.scss";
+.sidebar__wapper {
+  width: calc(100%-40px);
+  padding: 0 20px;
+}
+.sidebar__title {
+  border-bottom: 1px solid #353535;
+  background: url(../../img/banner/ico-title-sidebar.png) no-repeat right center;
+  padding-bottom: 8px;
+  margin-top: 20px;
+  padding-top: 8px;
+  margin-bottom: 15px;
 
-.sidebar {
-  @include mq(m) {
-    display: none;
+  h3 {
+      font-size: 24px;
+      color: #353535;
+      text-transform: uppercase;
+      font-weight: lighter;
   }
 }
-
-.sidebar__wrap {
-  height: 50px;
-  position: fixed;
-  border-bottom: 1px solid $border-color-primary;
-  display: flex;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 102;
+.sidebar__menu-item {
+  position: relative;
+  border: 1px solid #f4f4f4;
+  margin-bottom: 3px;
 }
-
-.sidebar__toggle {
+.sidebar__open-down {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px 16px;
+  width: 35px;
+  position: absolute;
+  right: 0;
+  height: 42px;
+  cursor: pointer;
+  background-color: #fff;
 }
 
-.sidebar__inner {
+.sidebar__menu-text {
+  font-weight: bolder;
   display: flex;
-  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  color: #242424;
+  font-size: 16px;
+  font-family: robotob;
+  padding: 10px 0 8px 15px;
+  display: inline-block;
 }
-
-.sidebar__overlay {
-  @include transition;
-  position: fixed;
-  top: 50px;
+.sidebar__form {
+  background: url(../../img/banner/bg-register-side.jpg) no-repeat bottom left #b85d9a;
+  padding: 13px 13px 20px 13px;
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .register__input {
+    margin: 0 ;
+  }
+}
+.item__checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #fff;
+    input {
+      width: .1px;
+      height: .1px;
+    }
+    .checkbox {
+      height: 14px;
+      width: 14px;
+      background-color: transparent;
+      border: 1.4px solid #fff;
+      border-radius: 2px;
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      transition: border-color ease .2s;
+      cursor: pointer;
+    }
+}
+.sidebar__banner {
+  margin-top: 20px;
+  float: left;
   width: 100%;
-  height: calc(100vh - 50px);
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 103;
-  opacity: 0;
-  visibility: hidden;
+  border: 1px dashed #d7a1c3;
+}
+.sidebar__news {
+  float: left;
+  margin-top: 35px;
+}
+.sidebar__news-title {
+  border-bottom: 1px solid #b85d9a;
+  position: relative;
+  margin-bottom: 20px;
+  &::before {
+    width: 50px;
+    content: "";
+    height: 6px;
+    border-radius: 3px;
+    background-color: #b85d9a;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+  h3 {
+    font-size: 18px;
+    color: #353535;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+.sidebar--bt {
+  width: 60% ;
+  margin: 0 auto;
+  background-color: #a73280;
+  border: 2px solid #a73280;
+  position: relative;
 
-  .is-search-active & {
-    opacity: 1;
-    visibility: visible;
+  &::before {
+    content: "";
+    width: 49px;
+    height: 33px;
+    position: absolute;
+    left: -30px;
+    bottom: -13px;
+    background-image: url(../../img/banner/ico-title-sidebar.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    width: 28px;
+    height: 20px;
+    position: absolute;
+    right: -15px;
+    bottom: -10px;
+    background-image: url(../../img/banner/ico-title-sidebar2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.sidebar__news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar__news-item {
+  display: flex;
+  gap: 10px;
+}
+.sidebar__news-img {
+  width: 35%;
+}
+.sidebar-news__detail-title a{
+  font-size: 15px;
+  color: #353535;
+  display: block;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+.date-time {
+  font-size: 13px;
+  color: #9c9c9c;
+  display: inline-block;
+  margin-right: 10px;
+  display: flex;
+  gap: 7px;
+
+  span{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3px;
   }
 }

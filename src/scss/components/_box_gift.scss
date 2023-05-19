@@ -1,0 +1,51 @@
+.box-gift {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    outline: 2px dashed #b85d9a;
+    border: 8px solid #fff;
+    background-color: #fff4fc;
+    padding: 20px;
+
+    .bt-primary {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 7px;
+    }
+}
+.btn-orange {
+    border: 1px solid #e95b35;
+    background-color: #e95b35;
+}
+.box-gift__text1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4em;
+    display: block;
+}
+.box-gift__title {
+    font-size: 24px;
+    color: #b85d9a;
+    font-weight: 600;
+    line-height: 1.4em;
+    display: block;
+    margin-bottom: 10px;
+}
+.box-gift__text2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4em;
+    display: block;
+    margin-bottom: 10px;
+}
+.box-gift__wrap-btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.box-gift__text3 {
+    font-size: 15px;
+    color: #353535;
+    display: block;
+    margin-top: 15px;
+}

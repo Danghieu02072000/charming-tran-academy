@@ -1,0 +1,54 @@
+.crumbar {
+    background-image: url(../../img/banner/bg-search.jpg);
+    background-position: top center;
+    background-size: cover;
+    padding: 20px 0;
+}
+.crumber__container {
+    display: flex;
+    justify-content: space-between;
+}
+.crumber__left {
+    width: 75%;
+}
+.crumber__search {
+    width: 25%;
+}
+.crumber__heading {
+    font-size: 24px;
+    color: #353535;
+    margin-bottom: 5px;
+}
+.crumber__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.crumber--active {
+    color: #b85d9a;
+}
+.crumber__search {
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.crumber__form {
+    height: 40px;
+    padding: 1px;
+    background-color: #fff;
+}
+.crumber__input {
+    height: 38px;
+    border: none;
+    text-indent: 10px;
+    font-style: italic;
+    width: calc(100% - 42px);
+    font-size: 13px;
+}
+.crumber__btn {
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: transparent;
+}
