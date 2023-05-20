@@ -1,5 +1,9 @@
 .list_comment {
     padding: 30px ;
+
+    @include mq(xxs) {
+        padding: 0;
+      }
 }
 .list-comment__list {
     display: flex;
@@ -8,12 +12,27 @@
     gap: 30px;
     flex-wrap: wrap;
 
+    @include mq(xxs) {
+        flex-direction: column-reverse;
+    }
+    @include mq(m) {
+        flex-direction: row;
+    }
+
 }
 .list-comment__item {
     width: calc(33.3333% - 30px);
     border: 1px solid #e5e5e5;
     padding: 15px;
     min-height: 140px;
+
+    @include mq(xxs) {
+        width: 100%;
+    }
+
+    @include mq(m) {
+        width: calc(33.3333% - 30px);
+    }
 }
 .list-commnet__title {
     width: calc(33.3333% - 30px);
@@ -24,6 +43,15 @@
     gap: 15px;
     justify-content: center;
     align-items: center;
+
+    @include mq(xxs) {
+        width: 100%;
+        order: 1;
+      }
+    @include mq(m) {
+        width: calc(33.3333% - 30px);
+        order: 0;
+    }
 }
 .list-commnet__title-link {
     color:#353535;

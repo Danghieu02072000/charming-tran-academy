@@ -128,14 +128,55 @@ p {
 .main__wapper {
   display: flex;
   flex-direction: row;
+
+  @include mq(xxs) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  @include mq(sm) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 aside{
   width: 25%;
   display: flex;
   flex-direction: column;
+
+  @include mq(xxs) {
+    width: 100%;
+  }
+  @include mq(sm) {
+    width: 33%;
+  }
+  @include mq(m) {
+    width: 30%;
+  }
+  @include mq(l) {
+    width: 23%;
+  }
+
+  
+
 }
 .content__wapper {
   width: 75%;
+
+  @include mq(xxs) {
+    width: 100%;
+  }
+  @include mq(sm) {
+    width: 64%;
+  }
+
+  @include mq(m) {
+    width: 67%;
+  }
+  @include mq(l) {
+    width: 75%;
+  }
 }
 .w-100 {
   width: 100%;

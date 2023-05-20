@@ -8,11 +8,30 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: end;
+
+    @include mq(xxs) {
+        flex-wrap: wrap;
+      }
 }
 .box-cate__item {
     width: 31%;
-}
 
+    @include mq(xxs) {
+        width: 100%;
+    }
+    @include mq(m) {
+        width: 31%;
+    }
+}
+.box-cate__img {
+    @include mq(sm) {
+        width: 40%;
+        margin: 0 auto;
+      }
+    @include mq(m) {
+        width: 100%;
+    }
+}
 .box-cate__item:first-child {
     .box-cate__link {
         float: left;

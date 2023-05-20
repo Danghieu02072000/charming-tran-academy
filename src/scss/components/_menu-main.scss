@@ -15,9 +15,10 @@
   justify-content: center;
 }
 .nav-main__menu {
+  display: flex;
+  align-items: center;
   ul {
     display: flex;
-
     li {
       display: flex;
       a {
@@ -26,13 +27,17 @@
         font-family: $font-roboto-medium;
         padding: 25px 15px;
         font-size: 14px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 700;
         color: $c-black-1;
 
-        // @include mq(l) {
-        //   padding: 17px 27px;
-        // }
+        @include mq(m) {
+          padding: 15px 10px;
+        }
+
+        @include mq(l) {
+          padding: 20px 16px;
+        }
 
         &:hover {
           color: #93268f;

@@ -1,5 +1,9 @@
 .register {
     padding: 30px;
+
+    @include mq(xxs) {
+        padding: 0;
+      }
 }
 .register__wrap {
     padding: 30px 30px 20px 30px;
@@ -11,9 +15,29 @@
     gap: 50px;
     flex-direction: row;
     justify-content: space-between;
+
+    @include mq(xxs) {
+        flex-wrap: wrap;
+      }
 }
 .register-text {
     width: 42%;
+
+    @include mq(xxs) {
+        width: 100%;
+    }
+
+    @include mq(m) {
+        width: 42%;
+    }
+}
+.register__form {
+    @include mq(xxs) {
+        width: 100%;
+    }
+    @include mq(m) {
+        width: 50%;
+    }
 }
 .register-text__title {
     color: #fff;
@@ -37,9 +61,27 @@
     font-size: 14px;
     color: #747474;
     outline-color: blue;
+
+    @include mq(xxs) {
+        width: 100%;
+        margin-left:0
+    }
+
+    @include mq(m) {
+        width: calc(33.333% - 10px);
+        margin-left: 10px;
+      }
+
 }
 .input-double {
     width: calc(66.666% - 10px);
+
+    @include mq(xxs) {
+        width: 100%;
+    }
+    @include mq(m) {
+        width: calc(66.666% - 10px);
+      }
 }
 .register__btn {
     width: calc(33.333% - 10px);
@@ -50,6 +92,14 @@
     color: #fff;
     font-size: 18px;
     transition: .3s ease-in-out;
+
+    @include mq(xxs) {
+        width: 100%;
+        margin-left: 0;
+    }
+    @include mq(m) {
+        width: calc(33.333% - 10px);
+    }
 }
 .register__btn:hover {
     border-color: #fff;

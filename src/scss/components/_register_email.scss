@@ -5,6 +5,10 @@
 .register_email__wapper {
     display: flex;
     gap: 10px;
+
+    @include mq(xxs) {
+        flex-wrap: wrap;
+      }
 }
 .register-email__text {
     background-image: url(../../img/icons/ico-newsletter.png);
@@ -27,6 +31,13 @@
         line-height: 1.4em;
         font-style: italic;
     }
+
+    @include mq(xxs) {
+        width: 100%;
+      }
+    @include mq(sm) {
+        width: 48%;
+    }
 }
 .register-email__form {
     width: 49%;
@@ -37,6 +48,13 @@
 
     form {
         width: 100%;
+    }
+
+    @include mq(xxs) {
+        width: 100%;
+    }
+    @include mq(sm) {
+        width: 50%;
     }
 }
 .register-email__input {
@@ -58,4 +76,8 @@
     font-size: 16px;
     font-family: robotob;
     transition: .3s ease-in-out;
+
+    &:hover {
+        background-color: #a73280;
+    }
 }

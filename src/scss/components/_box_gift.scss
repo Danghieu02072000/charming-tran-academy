@@ -11,11 +11,32 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 7px;
+
+        @include mq(xxs) {
+             width: 150px;
+             margin: 0 auto;
+          }
     }
 }
 .btn-orange {
     border: 1px solid #e95b35;
     background-color: #e95b35;
+    &:hover {
+        border: 1px solid #e95b35;
+        background-color: #fff;
+        color:#e95b35 !important;
+    }
+}
+.btn-hover:hover  {
+    color: #b85d9a !important;
+    background-color: #fff;
+    border-color: #b85d9a ;
+}
+.btn-hover {
+    @include mq(xxs) {
+        width: 230px !important;
+        margin: 0 auto;
+      }
 }
 .box-gift__text1 {
     font-size: 14px;
@@ -42,6 +63,10 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    @include mq(xxs) {
+        flex-direction: column;
+      }
 }
 .box-gift__text3 {
     font-size: 15px;

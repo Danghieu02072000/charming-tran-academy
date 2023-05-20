@@ -7,12 +7,34 @@
 .crumber__container {
     display: flex;
     justify-content: space-between;
+
+    @include mq(xxs) {
+        flex-wrap: wrap;
+    }
 }
 .crumber__left {
     width: 75%;
+
+    @include mq(xxs) {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    @include mq(sm) {
+        width: 60%;
+        padding-bottom: 0;
+    }
 }
 .crumber__search {
     width: 25%;
+
+    @include mq(xxs) {
+        width: 100%;
+    }
+
+    @include mq(sm) {
+        width: 37%;
+    }
 }
 .crumber__heading {
     font-size: 24px;
@@ -34,6 +56,7 @@
     justify-content: center;
 }
 .crumber__form {
+    width: 100%;
     height: 40px;
     padding: 1px;
     background-color: #fff;

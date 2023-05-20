@@ -7,6 +7,10 @@
     float: left;
     width: 100%;
     min-height: 260px;
+
+    @include mq(xxs) {
+        min-height: 130px;
+    }
 }
 .bg {
     background-image: url("../../img/banner/banner-ruler2.png");

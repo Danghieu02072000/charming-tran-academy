@@ -1,0 +1,127 @@
+.list-news__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #353535;
+    margin-bottom: 20px;
+}
+.list-news {
+    padding-bottom: 40px;
+}
+.list-news__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.list-news__item {
+    width: calc(100%/3 - 30px);
+    margin-bottom: 30px;
+
+    @include mq(xxs) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    @include mq(sm) {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    @include mq(ml) {
+        width: calc(100%/3 - 30px);
+        margin-bottom: 30px;
+    }
+}
+.list-news__detail-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #242424;
+    display: block;
+    line-height: 1.4em;
+}
+.date-time {
+    display: flex;
+    gap: 10px;
+}
+.date-time__time {
+    display: flex;
+    align-items: center;
+    
+    i {
+        padding-right: 3px;
+    }
+}
+.date-time__person {
+    display: flex;
+    align-items: center;
+
+    i {
+        padding-right: 3px;
+    }
+}
+.paging__wapper {
+    padding-bottom: 20px;
+}
+.paging__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.paging__link {
+    text-align: center;
+    padding: 5px 10px;
+    display: block;
+    color: #353535;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: 1px solid #e5e5e5;
+}
+.paging__link:hover, .paging__link:focus {
+    border-color: #b85d9a;
+    background-color: #f8e5f2;
+}
+.list-news__img1 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.list-news__overlay  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    // font: normal normal normal 14px/1 FontAwesome;
+}
+.list-news__overlay::before {
+    content: 'Xem chi tiết';
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #fff;
+    top: calc(50% - 20px);
+    left: calc(50% - 65px);
+    text-align: center;
+    line-height: 35px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: .4s ease-in-out;
+    font-size: 16px;
+}
+.list-news__overlay:hover {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in-out;
+}

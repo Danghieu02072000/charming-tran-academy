@@ -1,0 +1,29 @@
+.box-register-free {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    outline: 2px dashed #b85d9a;
+    border: 8px solid #fff;
+    background-color: #fff4fc;
+    padding: 20px;
+}
+.box-reg-free__title {
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+
+    b {
+        color: #b85d9a;
+    }
+}
+.box-reg-free__text {
+    padding-top: 10px;
+    display: block;
+
+    b {
+        text-transform: uppercase;
+    }
+}
+.register-free__form {
+    margin-top: 20px;
+}

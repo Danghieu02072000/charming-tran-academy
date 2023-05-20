@@ -3,14 +3,20 @@
 .sidebar__wapper {
   width: calc(100%-40px);
   padding: 0 20px;
+
+  @include mq(xxs) {
+    padding: 0;
+  }
 }
 .sidebar__title {
   border-bottom: 1px solid #353535;
-  background: url(../../img/banner/ico-title-sidebar.png) no-repeat right center;
+  background: url(../../img/banner/ico-title-sidebar.png) no-repeat right bottom;
   padding-bottom: 8px;
   margin-top: 20px;
   padding-top: 8px;
   margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
 
   h3 {
       font-size: 24px;
@@ -23,6 +29,11 @@
   position: relative;
   border: 1px solid #f4f4f4;
   margin-bottom: 3px;
+  &:hover {
+    a {
+      color: #b85d9a !important;
+    }
+  }
 }
 .sidebar__open-down {
   display: flex;
@@ -82,6 +93,34 @@
       box-sizing: border-box;
       transition: border-color ease .2s;
       cursor: pointer;
+
+      &::after {
+        top: 5.18px;
+        left: .7px;
+        transform: rotate(-45deg);
+        position: absolute;
+        height: 0;
+        width: 2.8px;
+        background-color: #fff;
+        display: inline-block;
+        transform-origin: left top;
+        border-radius: 5px;
+        content: ' ';
+      }
+
+      &::before {
+        top: 10.08px;
+        left: 5.74px;
+        transform: rotate(-135deg);
+        position: absolute;
+        height: 0;
+        width: 2.8px;
+        background-color: #fff;
+        display: inline-block;
+        transform-origin: left top;
+        border-radius: 5px;
+        content: ' ';
+      }
     }
 }
 .sidebar__banner {
@@ -122,6 +161,13 @@
   border: 2px solid #a73280;
   position: relative;
 
+  @include mq(sm) {
+    width: 70%;
+  }
+
+  &:hover {
+    border-color: #fff;
+  }
   &::before {
     content: "";
     width: 49px;

@@ -9,6 +9,11 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
+
+  @include mq(xxs) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .footer__logo-img {
   display: inline-block;
@@ -16,12 +21,39 @@
 }
 .footer__logo {
   width: 25%;
+
+  @include mq(xxs) {
+    width: 100%;
+  }
+  @include mq(sm) {
+    width: 46%;
+  }
+  @include mq(m) {
+    width: 25%;
+  }
 }
 .footer__contact {
   width: 35%;
+
+  @include mq(xxs) {
+    width: 100%;
+  }
+  @include mq(sm) {
+    width: 50%;
+  }
+  @include mq(m) {
+    width: 35%;
+  }
 }
 .footer__map {
   width: 32%;
+
+  @include mq(xxs) {
+    width: 100%;
+  }
+  @include mq(m) {
+    width: 32%;
+  }
 }
 .footer__logo-list {
   display: flex;

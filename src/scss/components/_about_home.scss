@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    @include mq(xxs) {
+        flex-wrap: wrap;
+    }
 }
 .about-home__intro {
     h2 {
@@ -16,6 +19,13 @@
         font-family: robotob;
         padding-left: 60px;
         margin-bottom: 15px;
+    }
+    @include mq(xxs) {
+        width: 100%;
+    }
+
+    @include mq(m) {
+        width: 47%;
     }
 }
 .about-home__item {
@@ -32,6 +42,14 @@
     background-position: 0 10px;
     padding-left: 57px;
   
+}
+.about-home__video {
+    @include mq(sm) {
+        width: 100%;
+    }
+    @include mq(m) {
+        width: 44%;
+    }
 }
 .about-home__video a {
     position: relative;
@@ -51,4 +69,18 @@
     background-position: 0 0;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+.about-home{
+
+    .bt-primary:hover {
+        background-color: #fff;
+        color: #b85d9a !important;
+        border: 1px solid #b85d9a;
+    }
+    .bt-primary {
+
+        i {
+            padding-left: 10px;
+        }
+    }
 }

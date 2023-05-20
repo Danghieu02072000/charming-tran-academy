@@ -1,7 +1,11 @@
 .class-opening {
     float: left;
     width: 100%;
-    padding: 40px ;
+    padding: 40px;
+
+    @include mq(xxs) {
+        padding: 20px 0 30px 0;
+      }
 }
 .class-opening__title {
     background-image: url(../../img/icons/ico-class.png);
@@ -12,22 +16,59 @@
     font-family: robotob;
     padding-left: 50px;
     margin-bottom: 15px;
+
+    @include mq(xxs) {
+        font-size: 24px;
+    }
+    @include mq(m) {
+        font-size: 36px;
+    }
 }
 .class-opening__list {
     display: flex;
     flex-direction: row;
     gap: 30px;
+
+    @include mq(xxs) {
+        flex-wrap: wrap;
+      }
 }
 .class-opening__left {
     border: 1px solid #e5e5e5;
     padding: 10px;
     width: 47%;
     float: left;
+    height: 100%;
+    
+    @include mq(xxs) {
+        width: 100%;
+    }
+    @include mq(m) {
+        width: 47%;
+    }
+}
+.class-opening__right {
+
+    @include mq(xxs) {
+        width: 100%;
+      }
+    @include mq(m) {
+        width: 47%;
+    }
 }
 .class-opening__btn {
     position: absolute;
     bottom: 0;
-    right: 0;   
+    right: 0;
+    background-color: #e95b35;
+    
+    i {
+        padding-left: 10px;
+    }
+    &:hover {
+        background-color: #fff;
+        color:#e95b35 !important;
+    }
 }
 .class-opening__img {
     position: relative;
@@ -96,9 +137,10 @@
     margin-top: 5px;
 }
 .class-opening-right__link {
+    height: 50%;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -109,12 +151,15 @@
         color: #353535;
         margin-top: 8px;
       }
-    
+        @include mq(ml) {
+        height: 50%;
+      }
 }
 .class-opening-right__link:hover {
     b {
         color: #fff;
     }
+    color: #fff;
     background-color: #b85d9a;
     border: 1px solid #b85d9a;
     
@@ -128,6 +173,7 @@
     font-size: 18px;
     text-align: center;
     padding: 15px 0;
+    border: 1px solid #e2e2e2;
 }
 .class-opening-right__btn:hover {
     background-color: #b85d9a;
