@@ -37,6 +37,11 @@
         width: 230px !important;
         margin: 0 auto;
       }
+
+    @include mq(m) {
+        width: 235px !important;
+        margin: 0 auto;
+    }
 }
 .box-gift__text1 {
     font-size: 14px;

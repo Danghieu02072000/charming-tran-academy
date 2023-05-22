@@ -4,8 +4,19 @@ const LANG_SELECTOR = '.js-langguage'
 const LANG_TOOGLE_SELECTOR = '.js-language-toogle'
 const LANG_DROPDOWN_SELECTOR = '.js-langguage-dropdown'
 const LANG_DROPDOWN_ACTIVE_CLASS = 'navigation__langguage-dropdown--active'
+var togger_on = document.querySelector('.nav-mobie__togger-link')
+var togger_off = document.querySelector('.nav-mobie__menu-close')
+var nav_mobie = document.querySelector('.nav-mobie__menu')
+togger_on.onclick = function() {
+  nav_mobie.classList.toggle("active");
+
+}
+togger_off.onclick = function() {
+  nav_mobie.classList.toggle("active");
+}
 
 export default () => {
+
   const el = select(LANG_SELECTOR)
   if (el) {
     const toggleEl = select(LANG_TOOGLE_SELECTOR, el)

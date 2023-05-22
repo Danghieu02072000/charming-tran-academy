@@ -10,13 +10,7 @@ body {
   line-height: 1.42857;
 }
 
-.wrapper {
-  padding-top: 50px;
 
-  @include mq(m) {
-    padding-top: 0;
-  }
-}
 
 .main {
   display: flex;
