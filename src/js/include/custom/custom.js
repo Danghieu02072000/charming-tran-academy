@@ -15,6 +15,13 @@ togger_off.onclick = function() {
   nav_mobie.classList.toggle("active");
 }
 
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("loader--hidden");
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild('loader');
+  })
+});
 export default () => {
 
   const el = select(LANG_SELECTOR)

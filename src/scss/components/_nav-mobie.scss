@@ -137,3 +137,46 @@
         color: #fff;
      }
 }
+.nav-mobie {
+    @include mq(xxs) {
+        display: block;
+      }
+      @include mq(m) {
+        display: none;
+      }
+}
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #b85d9a;
+    z-index: 10000;
+}
+.icon-loading-wrap {
+    width: 60px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    background-image: url(../../img/icons/ico-loading1.png);
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    animation: spin 1.25s linear infinite;
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
