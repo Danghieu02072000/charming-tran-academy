@@ -26,7 +26,7 @@
     }
 
     p {
-        color: #747474;
+        color: $text-color-second;
         font-size: 14px;
         line-height: 1.4em;
         font-style: italic;
@@ -69,9 +69,9 @@
 .register-email__btn {
     width: 105px;
     height: 44px;
-    background-color: #b85d9a;
+    background-color: $color-primary;
     color: #fff;
-    border: 1px solid #b85d9a;
+    border: 1px solid $color-primary;
     text-transform: uppercase;
     font-size: 16px;
     font-family: robotob;

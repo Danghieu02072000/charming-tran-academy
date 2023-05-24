@@ -40,26 +40,26 @@
     }
 }
 .register-text__title {
-    color: #fff;
+    color: $color-white;
     font-size: 24px;
     margin-bottom: 10px;
 }
 .register-text__desc {
-    color: #fff;
+    color: $color-white;
     line-height: 1.4;
 }
 .register__input {
     width: calc(33.333% - 10px);
     margin-left: 10px;
     height: 44px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: $color-white;
+    border: 1px solid $color-white;
     float: left;
     margin-bottom: 10px;
     text-indent: 10px;
     font-style: italic;
     font-size: 14px;
-    color: #747474;
+    color: $text-color-primary;
     outline-color: blue;
 
     @include mq(xxs) {
@@ -87,9 +87,9 @@
     width: calc(33.333% - 10px);
     margin-left: 10px;
     height: 44px;
-    background-color: #a73280;
-    border: 2px solid #a73280;
-    color: #fff;
+    background-color: $background-3;
+    border: 2px solid $background-3;
+    color: $color-white;
     font-size: 18px;
     transition: .3s ease-in-out;
 
@@ -102,5 +102,5 @@
     }
 }
 .register__btn:hover {
-    border-color: #fff;
+    border-color: $color-white;
 }

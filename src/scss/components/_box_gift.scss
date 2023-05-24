@@ -2,7 +2,7 @@
     width: 100%;
     text-align: center;
     margin: 20px 0;
-    outline: 2px dashed #b85d9a;
+    outline: 2px dashed $color-primary;
     border: 8px solid #fff;
     background-color: #fff4fc;
     padding: 20px;
@@ -19,18 +19,18 @@
     }
 }
 .btn-orange {
-    border: 1px solid #e95b35;
-    background-color: #e95b35;
+    border: 1px solid $color-orange;
+    background-color: $color-orange;
     &:hover {
-        border: 1px solid #e95b35;
+        border: 1px solid $color-orange;
         background-color: #fff;
-        color:#e95b35 !important;
+        color:$color-orange !important;
     }
 }
 .btn-hover:hover  {
-    color: #b85d9a !important;
+    color: $color-primary !important;
     background-color: #fff;
-    border-color: #b85d9a ;
+    border-color: $color-primary ;
 }
 .btn-hover {
     @include mq(xxs) {
@@ -51,7 +51,7 @@
 }
 .box-gift__title {
     font-size: 24px;
-    color: #b85d9a;
+    color: $color-primary;
     font-weight: 600;
     line-height: 1.4em;
     display: block;
@@ -75,7 +75,7 @@
 }
 .box-gift__text3 {
     font-size: 15px;
-    color: #353535;
+    color: $pagination-color;
     display: block;
     margin-top: 15px;
 }

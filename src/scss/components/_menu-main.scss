@@ -11,7 +11,7 @@
 
 }
 .nav-main__wrap {
-  border-bottom: 3px solid #b85d9a;
+  border-bottom: 3px solid $color-primary;
 }
 
 .nav-main__inner {
@@ -41,7 +41,7 @@
         font-size: 14px;
         text-transform: capitalize;
         font-weight: 700;
-        color: $c-black-1;
+        color: $text-color-primary;
 
         @include mq(m) {
           padding: 15px 10px;
@@ -52,7 +52,7 @@
         }
 
         &:hover {
-          color: #93268f;
+          color: $color-primary-blod;
         }
 
         .icon {
@@ -65,7 +65,7 @@
 
       &.is-active {
         a {
-          color: #93268f;
+          color: $color-primary-blod;
         }
       }
     }
@@ -89,7 +89,7 @@
   top: 62px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-color: #fff;
+  background-color: $color-white;
   box-shadow: 0 2px 13px #8c8c8c;
   padding-right: 15%;
   padding-top: 10px;
@@ -114,7 +114,7 @@
     flex-direction: column;
     & > a {
       font-size: 14px;
-      color: #942790;
+      color: $color-primary;
       margin-top: 20px;
       text-transform: uppercase;
       display: block;
@@ -169,7 +169,7 @@
   transition: .2s ease-out;
   left: -30px;
   top: 62px;
-  background-color: #b85d9a;
+  background-color: $background-secon;
   border-radius: 0 0 8px 8px;
   width: 220px;
 
@@ -190,7 +190,7 @@
     display: block;
     float: left;
     font-size: 15px;
-    color: #fff;
+    color: $color-white;
     padding: 10px 15px;
     font-family: robotor;
     width: 100%;
@@ -202,7 +202,7 @@
       content: "";
       width: 6px;
       height: 6px;
-      background-color: #b85d9a;
+      background-color: $background-secon;
       position: absolute;
       opacity: 0;
       top: 17px;
@@ -212,12 +212,12 @@
     }
 
     &:hover {
-      color: #fff;
+      color: $color-white;
       padding-left: 30px;
       transition: all .3s ease-in-out;
 
       &::after {
-        background-color: #fff;
+        background-color: $color-white;
         opacity: 1;
       }
     }

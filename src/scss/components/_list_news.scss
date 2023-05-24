@@ -1,7 +1,7 @@
 .list-news__title {
     font-size: 18px;
     text-transform: uppercase;
-    color: #353535;
+    color: $text-color-primary;
     margin-bottom: 20px;
 }
 .list-news {
@@ -75,13 +75,13 @@
     text-align: center;
     padding: 5px 10px;
     display: block;
-    color: #353535;
+    color: $text-color-primary;
     background-color: rgb(255, 255, 255);
     font-size: 15px;
     border: 1px solid #e5e5e5;
 }
 .paging__link:hover, .paging__link:focus {
-    border-color: #b85d9a;
+    border-color: $color-primary;
     background-color: #f8e5f2;
 }
 .list-news__img1 {
@@ -106,10 +106,10 @@
 }
 .list-news__overlay::before {
     content: 'Xem chi tiết';
-    color: #fff;
+    color: $color-white;
     width: 130px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid $color-white;
     top: calc(50% - 20px);
     left: calc(50% - 65px);
     text-align: center;

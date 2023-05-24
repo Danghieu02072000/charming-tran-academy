@@ -27,13 +27,13 @@
 }
 .contact__detail-title {
     font-size: 25px;
-    color: #353535;
+    color: $text-color-primary;
     font-weight: 600;
     margin-bottom: 15px;
 }
 .contact__detail-desc {
     font-weight: 400;
-    color: #747474;
+    color: $text-color-second;
     display: block;
     margin-bottom: 10px;
     font-size: 15px;
@@ -42,7 +42,7 @@
 .contact__detail-ul {
     float: left;
     width: 100%;
-    border-left: 3px solid #b85d9a;
+    border-left: 3px solid $color-primary;
     padding-left: 15px;
     margin-top: 10px;
 }
@@ -64,7 +64,7 @@
 
     .strong{
         font-style: normal;
-        color: #b85d9a;
+        color: $color-primary;
     }
 }
 .input-form {
@@ -80,10 +80,10 @@
     outline: none;
     border-radius: 0;
     box-shadow: none;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $border-color-primary;
 }
 .input-form::placeholder {
-    color: #747474;
+    color: $text-color-second;
 }
 .contact__form {
     width: calc(50% - 15px);

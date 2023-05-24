@@ -2,7 +2,7 @@
     width: 100%;
     text-align: center;
     margin: 20px 0;
-    outline: 2px dashed #b85d9a;
+    outline: 2px dashed $color-primary;
     border: 8px solid #fff;
     background-color: #fff4fc;
     padding: 20px;
@@ -13,7 +13,7 @@
     display: block;
 
     b {
-        color: #b85d9a;
+        color: $color-primary;
     }
 }
 .box-reg-free__text {
